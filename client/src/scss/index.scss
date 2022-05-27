@@ -1,0 +1,27 @@
+@import 'products';
+@import 'cart';
+@import 'payment';
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none; //・ 표시 없앰
+  padding: 0;
+}
+
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.gnb {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

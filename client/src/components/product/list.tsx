@@ -1,0 +1,12 @@
+import { Product } from "../../graphql/products";
+import ProductItem from "./item"
+//product의 이중배열 설정
+const ProductList = ({ list }: { list : { products: Product[]}[] }) => (
+  <ul className="products">
+    {list.map(page => page.products.map(product => (
+      <ProductItem { ...product} key={product.id} />
+    )))}
+  </ul>
+)
+
+export default ProductList;
